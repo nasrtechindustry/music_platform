@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"vite\" \"node index.js\"",
+    "build": "vite build",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +14,9 @@
     "bootstrap": "^5.3.3",
     "express": "^4.21.1",
     "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.1.0"
   }
 }
